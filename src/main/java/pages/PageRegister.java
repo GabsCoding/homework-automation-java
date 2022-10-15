@@ -124,11 +124,11 @@ public class PageRegister extends BasePage {
     public String clickGoogleLink(){
         linkGoogle.click();
 
-        String title = driver.getTitle();
+        String url = driver.getCurrentUrl();
 
         driver.navigate().back();
 
-        return title;
+        return url;
     }
 
     public String clickGauchaLink(){

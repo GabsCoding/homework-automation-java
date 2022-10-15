@@ -35,7 +35,7 @@ public class RegisterTest extends BaseTest {
     public void shouldValidateLinks() {
         PageRegister page = new PageRegister(getDriver());
 
-        Assert.assertEquals(page.clickGoogleLink(), "Google");
+        Assert.assertEquals(page.clickGoogleLink(), "https://www.google.com.br/");
 
         Assert.assertEquals(page.clickGauchaLink(), "empresas: Últimas Notícias | GZH");
     }
